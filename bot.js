@@ -24,7 +24,7 @@ client.on("message", message => {
   } else
   if (command === 'big') {
     message.channel.send('BIG NIBBA');
-   
+  }
 });
     
    /* client.on('message', message => {
