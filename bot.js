@@ -34,5 +34,13 @@ client.on('ready', () => {
         }
 });
 
+
+    client.on('message', message => {
+        if (message.content === 'yee') {
+          message.reply('Haw');
+        }
+});
+
+
 //THIS MUST BE THIS WAY
 client.login(process.env.BOT_TOKEN);
