@@ -12,6 +12,7 @@ client.on('ready', () => {
     client.on('message', message => {
         if (message.content === 'big') {
           message.reply('BIG NIBBA');
+        }
 });
 
 //THIS MUST BE THIS WAY
