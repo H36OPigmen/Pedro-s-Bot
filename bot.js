@@ -26,38 +26,6 @@ client.on("message", message => {
     message.channel.send('BIG NIBBA');
   }
 });
-    
-   /* client.on('message', message => {
-        if (message.content === 'ping') {
-          message.reply('pong');
-        }
-});
-
-    client.on('message', message => {
-        if (message.content === 'big') {
-          message.reply('BIG NIBBA');
-        }
-});
-
-    client.on('message', message => {
-        if (message.content === 'good doggy') {
-          message.reply('Gracias Papi :D');
-        }
-});
-
-    client.on('message', message => {
-        if (message.content === 'ya') {
-          message.reply('Yeet');
-        }
-});
-
-
-    client.on('message', message => {
-        if (message.content === 'yee') {
-          message.reply('Haw');
-        }
-});
-*/
 
 //THIS MUST BE THIS WAY
 client.login(process.env.BOT_TOKEN);
