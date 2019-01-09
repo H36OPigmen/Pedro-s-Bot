@@ -17,5 +17,17 @@ client.on('ready', () => {
         }
 });
 
+    client.on('message', message => {
+        if (message.content === 'good doggy') {
+          message.reply('Gracias Papi :D');
+        }
+});
+
+    client.on('message', message => {
+        if (message.content === 'ya') {
+          message.reply('Yeet');
+        }
+});
+
 //THIS MUST BE THIS WAY
 client.login(process.env.BOT_TOKEN);
