@@ -11,18 +11,26 @@ client.on('ready', () => {
     console.log('I am ready!');
     });
 
-client.on("message", (message) => {
-  // Exit and stop if it's not there
-  if (!message.content.startsWith(prefix)) return;
-    
-  if (!message.content.startsWith(prefix) || message.author.bot) return;
+client.on("message", message => {
+  if (message.author.bot) return;
+  // This is where we'll put our code.
+  if (message.content.indexOf(config.prefix) !== 0) return;
  
-  if (message.content.startsWith(prefix + "ping")) {
-    message.channel.send("pong!");
+  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+ 
+  if(command === 'ping') {
+    message.channel.send('Pong!');
   } else
-  if (message.content.startsWith(prefix + "big")) {
-    message.channel.send("BIG NIBBA");
+  if (command === 'big') {
+    message.channel.send('BIG NIBBA');
   }
+    if(command === "say"){
+  let text = args.join(" ");
+  message.delete();
+  message.channel.send(text);
+  }
+    
 });
     
    /* client.on('message', message => {
