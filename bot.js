@@ -22,8 +22,8 @@ client.on("message", message => {
   if(command === 'ping') {
     message.channel.send('Pong!');
   } else
-  if (command === 'blah') {
-    message.channel.send('Meh.');
+  if (command === 'big') {
+    message.channel.send('BIG NIBBA');
   }
 });
 
