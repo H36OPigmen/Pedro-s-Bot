@@ -5,33 +5,21 @@ const Discord = require('discord.js');
 // some might call it `cootchie`. Either way, when you see `client.something`, or `bot.something`,
 // this is what we're refering to. Your client.
 const client = new Discord.Client();
+const prefix = "tt";
 
 client.on('ready', () => {
     console.log('I am ready!');
     });
     
-    client.on('message', message => {
-        if (message.content === 'ping') {
-          message.reply('pong');
-        }
-});
-
-    client.on('message', message => {
-        if (message.content === 'big') {
-          message.reply('BIG NIBBA');
-        }
-});
-
-    client.on('message', message => {
-        if (message.content === 'good doggy') {
-          message.reply('Gracias Papi :D');
-        }
-});
-
-    client.on('message', message => {
-        if (message.content === 'ya') {
-          message.reply('Yeet');
-        }
+client.on("message", (message) => {
+  if (!message.content.startsWith(prefix) || message.author.bot) return;
+ 
+  if (message.content.startsWith(prefix + "ping")) {
+    message.channel.send("pong!");
+  } else
+  if (message.content.startsWith(prefix + "foo")) {
+    message.channel.send("bar!");
+  }
 });
 
 //THIS MUST BE THIS WAY
