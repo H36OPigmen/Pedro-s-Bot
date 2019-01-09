@@ -24,13 +24,7 @@ client.on("message", message => {
   } else
   if (command === 'big') {
     message.channel.send('BIG NIBBA');
-  } else
-    if(command === "say"){
-  let text = args.join(" ");
-  message.delete();
-  message.channel.send(text);
-  }
-    
+   
 });
     
    /* client.on('message', message => {
