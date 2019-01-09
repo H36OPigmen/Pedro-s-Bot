@@ -24,6 +24,9 @@ client.on("message", message => {
   } else
   if (command === 'big') {
     message.channel.send('BIG NIBBA');
+  } else
+        if (command === 'fuck you') {
+    message.channel.send('no u');
   }
 });
 
