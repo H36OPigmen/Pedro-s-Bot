@@ -26,7 +26,7 @@ client.on("message", message => {
     message.channel.send('BIG NIBBA');
   } else
         if (command === 'fuckyou') {
-    message.channel.send('/tts no u');
+    message.channel.send('no u');
   }
 });
 
