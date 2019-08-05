@@ -28,7 +28,7 @@ client.on("message", message => {
         if (command === 'fuckyou') {
     message.channel.send('no u');
   } else
-        if (command === 'Tello') {
+        if (command === 'tello') {
     message.channel.send('Has Big Gay');
   }
 });
